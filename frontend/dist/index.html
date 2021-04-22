@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FishButchery</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body >
+    <header class="header animate__animated">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="header__link" href="/">
+                    <img src="./img/blue-logo.webp" alt="logo" class="header__img">
+                </a>
+                <div class="header__info-section">
+                    <div class="header__info-section_schedule">Пн-Вс с 9:00 до 21:00</div>
+                    <a href="tel: +79152738899"  class="header__info-section_phone">+7 (915) 273 88 99</a>
+                </div>
+                <ul class="header__menu">
+                    <li class="header__menu_li">
+                        <a href="#" class="header__menu_link header__menu_link-catalogue">Каталог</a>
+                    </li>
+                    <li class="header__menu_li">
+                        <a href="#" data-linkto="about" class="header__menu_link">О нас</a>
+                    </li>
+                    <li class="header__menu_li">
+                        <a href="#" data-linkto="map" class="header__menu_link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown animate__animated">
+            <ul class="dropdown__wrapper">
+                <li class="dropdown__item" >
+                    <a class="dropdown__item_link" href="#">Охлаждённая рыба</a>
+                </li>
+                <li class="dropdown__item">
+                    <a class="dropdown__item_link" href="#">Икра</a>
+                </li>
+                <li class="dropdown__item">
+                    <a class="dropdown__item_link" href="#">Морепродукты</a>
+                </li>
+                <li class="dropdown__item">
+                    <a class="dropdown__item_link" href="#">Ферментация</a>
+                </li>
+                <li class="dropdown__item">
+                    <a class="dropdown__item_link" href="#">Напитки</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <section class="carousel" tabindex="0">
+        <div class="carousel__slides">
+            <div class="carousel__slide">
+                <div class="carousel__slide-content">
+                    <h2 class="carousel__slide-title">
+                        FISH BUTCHERY - РЫБНАЯ ЛАВКА НОВОГО ФОРМАТА
+                    </h2>
+                    <p class="carousel__slide-description">
+                        Разделка и доставка охлажденной рыбы в Москве в течении двух часов.
+                        Бесплатная доставка от 2 000 ₽ по Москве и от 5 000 ₽ по Московской области.
+                    </p>
+                    <p class="carousel__slide-description">
+                        Мы приступаем к разделке только после получения заказа, а значит вы получаете на стол самую свежую рыбу.
+                    </p>
+                </div>
+                <img class="carousel__slide-image" src="./img/main.jpg" alt="main-photo">
+            </div>
+            <div class="carousel__slide">
+                <img class="carousel__slide-image" src="./img/kitten-2965641_1920.jpg" alt="kitten">
+            </div>
+        </div>
+        <div class="carousel__controls"></div>
+    </section>
+    <section class="category">
+        <div class="container">
+            <h2 class="category__title">Охлаждённая рыба</h2>
+            <div class="category__wrapper">
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/salmon_steak.webp">
+                                <img class="category__item_img" src="img/products/fresh/salmon_steak.jpg" alt="Стейк сёмги">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Стейк сёмги</div>
+                        <div class="category__item_price">850 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/salmon_filet1.webp">
+                                <img class="category__item_img" src="img/products/fresh/salmon_filet1.jpg" alt="Филе сёмги">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Филе сёмги</div>
+                        <div class="category__item_price">от 650 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/salmon_medal.webp">
+                                <img class="category__item_img" src="img/products/fresh/salmon_medal.jpg" alt="Медальон из сёмги">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Медальон из сёмги</div>
+                        <div class="category__item_price">690 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                            <source type="image/webp" srcset="./img/products/fresh/trout1.webp">
+                            <img class="category__item_img" src="img/products/fresh/trout1.jpg" alt="Форель">
+                        </picture>
+                        </div>
+                        <div class="category__item_name">Форель</div>
+                        <div class="category__item_price">от 850 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="img/products/fresh/dorado2.webp">
+                                <img class="category__item_img" src="img/products/fresh/dorado2.jpg" alt="Дорада">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Дорада</div>
+                        <div class="category__item_price">550 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/seabass1.webp">
+                                <img class="category__item_img" src="img/products/fresh/seabass1.jpg" alt="Сибас">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Сибас</div>
+                        <div class="category__item_price">550 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/sudak1.webp">
+                                <img class="category__item_img" src="img/products/fresh/sudak1.jpg" alt="Судак">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Судак</div>
+                        <div class="category__item_price">990 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/sterlet1.webp">
+                                <img class="category__item_img" src="img/products/fresh/sterlet1.jpg" alt="Стерлядь">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Стерлядь</div>
+                        <div class="category__item_price">1 800 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/mullet1.webp">
+                                <img class="category__item_img" src="img/products/fresh/mullet1.jpg" alt="Кефаль">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Кефаль</div>
+                        <div class="category__item_price">790 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/carp1.webp">
+                                <img class="category__item_img" src="img/products/fresh/carp1.jpg" alt="Карп">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Карп</div>
+                        <div class="category__item_price">620 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fresh/soup.webp">
+                                <img class="category__item_img" src="img/products/fresh/soup.jpg" alt="Суповой набор">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Суповой набор</div>
+                        <div class="category__item_price">150 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="container">
+            <h2 class="category__title">Икра</h2>
+            <div class="category__wrapper">
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/caviar/caviar_trout.webp">
+                                <img class="category__item_img" src="img/products/caviar/caviar_trout.jpg" alt="Икра форели">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Икра форели</div>
+                        <div class="category__item_price">от 510 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/caviar/caviar_pink_salmon.webp">
+                                <img class="category__item_img" src="img/products/caviar/caviar_pink_salmon.png" alt="Икра горбуши">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Икра горбуши</div>
+                        <div class="category__item_price">от 520 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/caviar/caviar_red_salmon.webp">
+                                <img class="category__item_img" src="img/products/caviar/caviar_red_salmon.png" alt="Икра нерки">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Икра нерки</div>
+                        <div class="category__item_price">от 550 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/caviar/caviar_sturgeon.webp">
+                                <img class="category__item_img" src="img/products/caviar/caviar_sturgeon.png" alt="Икра осетровая">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Икра осетровая</div>
+                        <div class="category__item_price">от 10 900 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="container">
+            <h2 class="category__title">Морепродукты</h2>
+            <div class="category__wrapper">
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/seafood/Grebeshok.webp">
+                                <img class="category__item_img" src="./img/products/seafood/Grebeshok.jpg" alt="Гребешок">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Гребешок</div>
+                        <div class="category__item_price">от 520 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/seafood/Grebeshok_krupny.webp">
+                                <img class="category__item_img" src="./img/products/seafood/Grebeshok_krupny.jpg" alt="Гребешок крупный">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Гребешок крупный</div>
+                        <div class="category__item_price">760 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/seafood/Krevetki_tigrovye.webp">
+                                <img class="category__item_img" src="./img/products/seafood/Krevetki_tigrovye.jpg" alt="Креветки тигровые">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Креветки тигровые</div>
+                        <div class="category__item_price">от 900 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/seafood/Krevetki_korolevskie.webp">
+                                <img class="category__item_img" src="./img/products/seafood/Krevetki_korolevskie.jpg" alt="Креветки королевские">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Креветки королевские</div>
+                        <div class="category__item_price">от 600 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="img/products/seafood/Krab_falangi.webp">
+                                <img class="category__item_img" src="img/products/seafood/Krab_falangi.jpg" alt="Краб фаланги">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Краб фаланги</div>
+                        <div class="category__item_price">3 080 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/seafood/Krab_salatny.webp">
+                                <img class="category__item_img" src="./img/products/seafood/Krab_salatny.jpg" alt="Краб салатный">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Краб салатный</div>
+                        <div class="category__item_price">2 400 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="container">
+            <h2 class="category__title">Лаборатория Ферментации</h2>
+            <div class="category__wrapper">
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/gravlax.webp">
+                                <img class="category__item_img" src="img/products/fermentation/gravlax.jpg" alt="гравлакс">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Гравлакс</div>
+                        <div class="category__item_descr">&nbsp;</div>
+                        <div class="category__item_price">1 250 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/semga_slabosol_marlboro.webp">
+                                <img class="category__item_img" src="img/products/semga_slabosol_marlboro.jpg" alt="Сёмга слабосолёная хлопья мальборо">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Сёмга слабосолёная</div>
+                        <div class="category__item_descr">Хлопья мальборо</div>
+                        <div class="category__item_price">от 560 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/semga_slabosol_lemon.webp">
+                                <img class="category__item_img" src="img/products/fermentation/semga_slabosol_lemon.jpg" alt="Сёмга слабосолёная лимон">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Сёмга слабосолёная</div>
+                        <div class="category__item_descr">Лимон/перец</div>
+                        <div class="category__item_price">от 560 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/semga_slabosol_matcha.webp">
+                                <img class="category__item_img" src="img/products/fermentation/semga_slabosol_matcha.jpg" alt="Сёмга слабосолёная матча">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Сёмга слабосолёная</div>
+                        <div class="category__item_descr">Матча</div>
+                        <div class="category__item_price">от 560 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="img/products/fermentation/semga_slabosol_kurkuma.webp">
+                                <img class="category__item_img" src="img/products/fermentation/semga_slabosol_kurkuma.jpg" alt="Сёмга слабосолёная куркума">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Сёмга слабосолёная</div>
+                        <div class="category__item_descr">Куркума</div>
+                        <div class="category__item_price">от 560 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/tuna_marlboro.webp">
+                                <img class="category__item_img" src="img/products/fermentation/tuna_marlboro.jpg" alt="Тунец ферментированный хлопья мальборо">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Тунец ферментированный</div>
+                        <div class="category__item_descr">Хлопья мальборо</div>
+                        <div class="category__item_price">от 350 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/tuna_lemon.webp">
+                                <img class="category__item_img" src="img/products/fermentation/tuna_lemon.jpg" alt="Тунец ферментированный джин тархун">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Тунец ферментированный</div>
+                        <div class="category__item_descr">Джин/тархун</div>
+                        <div class="category__item_price">от 350 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/tuna_paprika.webp">
+                                <img class="category__item_img" src="img/products/fermentation/tuna_paprika.jpg" alt="Тунец ферментированный паприка">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Тунец ферментированный</div>
+                        <div class="category__item_descr">Паприка</div>
+                        <div class="category__item_price">от 350 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/tuna_lemon.webp">
+                                <img class="category__item_img" src="img/products/fermentation/tuna_lemon.jpg" alt="Тунец ферментированный лимон перец">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Тунец ферментированный</div>
+                        <div class="category__item_descr">Лимон/перец</div>
+                        <div class="category__item_price">от 350 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/fermentation/Sake_toba.webp">
+                                <img class="category__item_img" src="img/products/fermentation/Sake_toba.jpg" alt="Саке тоба">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Саке тоба</div>
+                        <div class="category__item_descr">&nbsp;</div>
+                        <div class="category__item_price">300 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="container">
+            <h2 class="category__title">Напитки</h2>
+            <div class="category__wrapper">
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/beverage/panna.webp">
+                                <img class="category__item_img" src="./img/products/beverage/panna.jpg" alt="Acqua Panna">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Acqua Panna 0.5 л</div>
+                        <div class="category__item_price">140 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/beverage/san_pellegrino.webp">
+                                <img class="category__item_img" src="./img/products/beverage/san_pellegrino.jpg" alt="San Pellegrino">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">San Pellegrino 0.5 л</div>
+                        <div class="category__item_price">160 р.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+                <div class="category__item">
+                    <a href="/" class="category__item_link">
+                        <div class="category__item_img-wrapper">
+                            <picture class="category__picture">
+                                <source type="image/webp" srcset="./img/products/beverage/perrier.webp">
+                                <img class="category__item_img" src="./img/products/beverage/perrier.jpg" alt="Perrier">
+                            </picture>
+                        </div>
+                        <div class="category__item_name">Perrier</div>
+                        <div class="category__item_price">140 руб.</div>
+                        <div class="category__item_additional">Скоро будет</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="instagram">
+
+            <h2 class="category__title">Следите за нами в Instagram:</h2>
+            <div id="instagram-feed1"></div>
+
+    </section>
+    <section id="about" class="about">
+        <div class="about__wrapper">
+            <div class="about__header">Fish Butchery — современная городская рыбная лавка в центре Москвы.</div>
+            <p class="about__parag">В основе нашей работы лежит четыре направления:</p>
+            <p class="about__parag"><span>Fine Cut & Service.</span> Мы стремимся постоянно совершенствовать свои навыки в ремесле
+                обработки рыбы. Сервис для нас – создание максимального комфорта для клиента и его гастрономических
+                увлечений. Максимально возможно короткие сроки поставки только что обработанной рыбы. Мы не храним рыбу
+                больше двух суток и ограничиваем ассортимент для её оборачиваемости.</p>
+            <p class="about__parag"><span>Регулярные поставки от лучших поставщиков.</span> Качество рыбы и стабильность поставок —
+                это то, что мы прежде всего ценим в наших партнёрах. Ключевое наше направление — это охлаждённая
+                продукция. Мы против заморозки!</p>
+            <p class="about__parag"><span>Контролируемая ферментация.</span> Мы разделяем энтузиазм ведущих профессионалов в области
+                контролируемой ферментации продуктов и стараемся применять их опыт в своей работе.</p>
+            <p class="about__parag"><span>Гастрономия.</span> Мы верим, что способны расширить гастрономические горизонты, используя удачные сочетания максимально свежих продуктов.</p>
+        </div>
+        <picture class="about__bckg">
+            <source type="image/webp" srcset="./img/aboutus.webp">
+            <img class="about__bckg" src="./img/aboutus.jpg" alt="О нас">
+        </picture>
+        <div class="about__filter"></div>
+    </section>
+    <section class="map">
+        <div id="map">
+            <div id="contacts" class="map__contacts">
+                <div class="map__contacts_header">Наша лавка:</div>
+                <div class="map__contacts_addr">Москва <br>
+                    м. Новокузнецкая<br>
+                    Пятницкий пер., 2 (Пятницкий рыбный комплекс)
+                    тел.: +7 915 273 8899<br>
+                    e-mail: <a class="map__contacts_email" href="mailto:support@fishbutchery.ru" target="_blank">support@fishbutchery.ru</a></div>
+                <div class="map__contacts_socials">
+                    <a class="map__contacts_link" href="https://www.facebook.com/fishbutchering" target="_blank">
+                        <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Facebook</desc><path d="M21.1 7.8C22.5 6.5 24.5 6 26.4 6h6v6.3h-3.9c-.8-.1-1.6.6-1.8 1.4v4.2h5.7c-.1 2-.4 4.1-.7 6.1h-5v18h-7.4V24h-3.6v-6h3.6v-5.9c.1-1.7.7-3.3 1.8-4.3z"></path></svg>
+                    </a>
+                    <a class="map__contacts_link" href="https://vk.com/fishbutchery" target="_blank">
+                        <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>VK</desc><path d="M41.2 22.2c.6-.8 1.1-1.5 1.5-2 2.7-3.5 3.8-5.8 3.5-6.8l-.2-.2c-.1-.1-.3-.3-.7-.4-.4-.1-.9-.1-1.5-.1h-7.2c-.2 0-.3 0-.3.1 0 0-.1 0-.1.1v.1c-.1 0-.2.1-.3.2-.1.1-.2.2-.2.4-.7 1.9-1.5 3.6-2.5 5.2-.6 1-1.1 1.8-1.6 2.5s-.9 1.2-1.2 1.5c-.3.3-.6.6-.9.8-.2.3-.4.4-.5.4-.1 0-.3-.1-.4-.1-.2-.1-.4-.3-.5-.6-.1-.2-.2-.5-.3-.9 0-.4-.1-.7-.1-.9v-1.1-1-1.9c0-.7 0-1.2.1-1.6v-1.3c0-.4 0-.8-.1-1.1-.1-.3-.1-.5-.2-.7-.1-.2-.3-.4-.5-.6-.2-.1-.5-.2-.8-.3-.8-.2-1.9-.3-3.1-.3-2.9 0-4.7.2-5.5.6-.3.2-.6.4-.9.7-.3.3-.3.5-.1.6.9.1 1.6.5 2 1l.1.3c.1.2.2.6.3 1.1.1.5.2 1.1.2 1.7.1 1.1.1 2.1 0 2.9-.1.8-.1 1.4-.2 1.9-.1.4-.2.8-.3 1.1-.1.3-.2.4-.3.5 0 .1-.1.1-.1.1-.1-.1-.4-.1-.6-.1-.2 0-.5-.1-.8-.3-.3-.2-.6-.5-1-.9-.3-.4-.7-.9-1.1-1.6-.4-.7-.8-1.5-1.3-2.4l-.4-.7c-.2-.4-.5-1.1-.9-1.9-.4-.8-.8-1.6-1.1-2.4-.1-.3-.3-.6-.6-.7l-.1-.1c-.1-.1-.2-.1-.4-.2s-.3-.1-.5-.2H3.2c-.6 0-1.1.1-1.3.4l-.1.1c0 .1-.1.2-.1.4s0 .4.1.6c.9 2.2 1.9 4.3 3 6.3s2 3.6 2.8 4.9c.8 1.2 1.6 2.4 2.4 3.5.8 1.1 1.4 1.8 1.7 2.1.3.3.5.5.6.7l.6.6c.4.4.9.8 1.6 1.3.7.5 1.5 1 2.4 1.5.9.5 1.9.9 3 1.2 1.2.3 2.3.4 3.4.4H26c.5 0 .9-.2 1.2-.5l.1-.1c.1-.1.1-.2.2-.4s.1-.4.1-.6c0-.7 0-1.3.1-1.8s.2-.9.4-1.2c.1-.3.3-.5.5-.7.2-.2.3-.3.4-.3.1 0 .1-.1.2-.1.4-.1.8 0 1.3.4s1 .8 1.4 1.3c.4.5 1 1.1 1.6 1.8.6.7 1.2 1.2 1.6 1.5l.5.3c.3.2.7.4 1.2.5.5.2.9.2 1.3.1l5.9-.1c.6 0 1-.1 1.4-.3.3-.2.5-.4.6-.6.1-.2.1-.5 0-.8-.1-.3-.1-.5-.2-.6-.1-.1-.1-.2-.2-.3-.8-1.4-2.2-3.1-4.4-5.1-1-.9-1.6-1.6-1.9-1.9-.5-.6-.6-1.2-.3-1.9.3-.5 1-1.5 2.2-3z"></path></svg>
+                    </a>
+                    <a class="map__contacts_link" href="https://vk.com/fishbutchery" target="_blank">
+                        <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><desc>Instagram</desc><path d="M16.396,3.312H8.604c-2.921,0-5.292,2.371-5.292,5.273v7.846c0,2.886,2.371,5.256,5.292,5.256h7.791c2.922,0,5.292-2.37,5.292-5.274V8.586C21.688,5.683,19.317,3.312,16.396,3.312L16.396,3.312z M7.722,12.5c0-2.64,2.142-4.778,4.778-4.778c2.636,0,4.777,2.138,4.777,4.778s-2.142,4.777-4.777,4.777C9.864,17.277,7.722,15.14,7.722,12.5zM17.756,8.182c-0.615,0-1.104-0.487-1.104-1.102s0.488-1.103,1.104-1.103c0.614,0,1.102,0.488,1.102,1.103S18.37,8.182,17.756,8.182L17.756,8.182z"></path><path d="M12.5,9.376c-1.731,0-3.124,1.398-3.124,3.124c0,1.725,1.393,3.124,3.124,3.124c1.732,0,3.124-1.399,3.124-3.124C15.624,10.775,14.211,9.376,12.5,9.376L12.5,9.376z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <div class="footer__logo footer__logo_wrap">
+                    <a href="/" class="footer__logo_link">
+                        <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0px" y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve"> <style type="text/css"> .st0{fill:#B7D7F1;} .st1{fill:#404040;} </style> <path class="st0" d="M2102.1,1869.3h-196l130.4,75.3l-95.4,55.1l-73.1-42.2h-196l171.1,98.8l-171.1,98.8h196l73.1-42.2l95.4,55.1 l-130.4,75.3h196l269.4-155.5l0.5-62.5L2102.1,1869.3z M2175.6,2087.7l-41,23.7l-41-23.7l-54.4-31.4l53.9-31.1l41.5-24l41.5,24 l53.9,31.1L2175.6,2087.7z"></path> <g> <path class="st0" d="M1532.1,2034.2l2.8-35.2l15.5,1.2l-1.4,17.2l22.9,1.8l1.2-15.5l14.2,1.1l-1.2,15.5l37.3,3l-1.4,18 L1532.1,2034.2z"></path> <path class="st0" d="M1629.4,1979l-3.1,18l-88.8-15.3l3.1-18L1629.4,1979z"></path> <path class="st0" d="M1580.6,1937.3c0.9,0.2,1.4,0.3,1.7,0.3c0.2-0.1,0.5-0.3,0.9-0.7l17.8-20.5c1.7,0,3.9,0.4,6.6,1.2l30,8.4 c1.5,3.7,2.2,7.5,2.2,11.6c0,4-0.5,7.9-1.5,11.6c-1,3.7-2.6,7.2-4.7,10.6c-2.1,3.4-4.7,6.3-7.9,8.7l-22.1-6.2l4.8-17.3l15.3,4.3 c0.8,0.2,1.3-0.1,1.6-1l1.5-5.4c0.2-0.9,0-1.4-0.8-1.6l-18.4-5.1c-1.1-0.3-1.8-0.5-2.2-0.4c-0.4,0-0.8,0.4-1.5,1.2l-17.5,20.1 c-0.8-0.1-1.9-0.2-3.2-0.5c-1.3-0.3-2.4-0.5-3.4-0.8l-30.9-8.6c-1.5-3.7-2.2-7.5-2.3-11.5s0.4-7.8,1.5-11.5c1-3.7,2.6-7.2,4.7-10.7 c2.1-3.4,4.8-6.4,7.9-8.7l22.7,6.3l-4.8,17.3l-15.9-4.4c-0.8-0.2-1.3,0.1-1.6,1l-1.5,5.4c-0.2,0.9,0,1.4,0.8,1.6L1580.6,1937.3z"></path> <path class="st0" d="M1562.6,1883.7l7.1-16.6l35.3,15.2l3.5-8.1l-35.3-15.2l7.1-16.6l82.8,35.6l-7.1,16.6l-34.4-14.8l-3.5,8.1 l34.4,14.8l-7.1,16.6L1562.6,1883.7z"></path> <path class="st0" d="M1697.2,1812.2c0,3.5-0.8,7.3-2.4,11.4c-1.6,4.1-3.8,8.1-6.5,12.2l-11.1,16.6l-74.9-50.2l11.1-16.6 c2.7-4.1,5.6-7.6,8.7-10.7c3.1-3.1,6.3-5.3,9.6-6.6l28.6,19.2c0.4,1.3,0.8,2.7,1,4.4c0.2,1.6,0.3,3.2,0.3,4.9 c1.5-0.6,3-1.1,4.5-1.6c1.5-0.5,2.9-0.8,4.2-0.9L1697.2,1812.2z M1628.3,1788c-1-0.6-1.8-0.5-2.4,0.5l-3.6,5.4l22.6,15.1l3.9-5.8 c0.5-0.7,0.3-1.3-0.3-1.7L1628.3,1788z M1661.9,1810.5c-0.7-0.5-1.3-0.3-1.7,0.3l-3.9,5.8l20.9,14l3.6-5.4c0.6-1,0.5-1.8-0.5-2.4 L1661.9,1810.5z"></path> <path class="st0" d="M1669.2,1715.3l63.7,56.2c-0.3,3.9-1.3,7.8-3.1,11.5c-1.8,3.7-3.9,7-6.5,9.8c-2.5,2.9-5.5,5.4-9,7.6 c-3.5,2.2-7.1,3.7-11,4.5l-63.7-56.2l12-13.6l58.4,51.5c0.6,0.5,1.2,0.5,1.8-0.2l3.8-4.3c0.6-0.7,0.6-1.3,0-1.8l-58.4-51.5 L1669.2,1715.3z"></path> <path class="st0" d="M1751.2,1761.7l-48.4-55.1l-2,0l-7.5,6.6l-10.2-11.6l31.3-27.5l10.2,11.6l-7.5,6.6l-0.2,2l48.4,55.1 L1751.2,1761.7z"></path> <path class="st0" d="M1758.7,1657.5c-0.5-0.7-1.1-0.8-1.8-0.3l-4.7,3.2c-0.8,0.5-0.9,1.1-0.4,1.8l36.7,54.4 c0.5,0.7,1.1,0.8,1.8,0.3l4.7-3.2c0.8-0.5,0.9-1.1,0.4-1.8l-14.1-21l14.8-10l18.1,26.8c-1.3,3.7-3.2,7.2-5.8,10.3 c-2.6,3.1-5.5,5.7-8.7,7.9c-3.2,2.1-6.7,3.8-10.5,5.1c-3.9,1.3-7.8,1.8-11.7,1.6l-44.6-66.1c1.3-3.7,3.2-7.2,5.8-10.3 c2.6-3.1,5.5-5.7,8.7-7.9c3.2-2.1,6.7-3.8,10.5-5.1c3.9-1.3,7.8-1.8,11.7-1.6l17.9,26.5l-14.8,10L1758.7,1657.5z"></path> <path class="st0" d="M1784.5,1626.8l16.2-8l17.1,34.4l7.9-3.9l-17.1-34.4l16.2-8l40,80.8l-16.2,8l-16.6-33.6l-7.9,3.9l16.6,33.6 l-16.2,8L1784.5,1626.8z"></path> <path class="st0" d="M1843.4,1599.4l33.3-11.7l5.1,14.6l-16.3,5.7l7.6,21.6l14.6-5.1l4.7,13.5l-14.6,5.1l7.3,20.7l16.3-5.7 l5.1,14.6l-33.3,11.7L1843.4,1599.4z"></path> <path class="st0" d="M1933.3,1631.4c-0.2-0.8-0.7-1.1-1.5-0.9l-6.8,1.5l7.5,34.4l-17.7,3.8l-19.1-88.1l20.1-4.4 c4.7-1,9.2-1.6,13.5-1.6c4.3-0.1,8.1,0.6,11.4,1.9l7.7,35.6c-0.6,1.2-1.4,2.5-2.3,3.8c-1,1.3-2,2.6-3.1,3.7c1.5,0.6,2.9,1.3,4.4,2 c1.4,0.7,2.6,1.5,3.7,2.3l7.7,35.3l-18.2,3.9L1933.3,1631.4z M1922.1,1618.4l6.8-1.5c0.8-0.2,1.1-0.7,0.9-1.5l-5.6-25.6 c-0.2-1.1-0.9-1.6-2.1-1.3l-6.3,1.4L1922.1,1618.4z"></path> <path class="st0" d="M1989.5,1620.9c0.9-0.1,1.3-0.5,1.3-1.3l-4.2-52.2l18-1.5l4.8,59.3c-1.6,1.7-3.5,3.1-5.8,4.3 c-2.3,1.2-4.7,2.1-7.2,2.7l2,24.6l-17.6,1.4l-2-24.6c-2.6-0.2-5.1-0.7-7.5-1.5s-4.6-1.9-6.4-3.3l-4.8-59.3l18-1.5l4.2,52.2 c0.1,0.8,0.6,1.2,1.5,1.1L1989.5,1620.9z"></path> </g> <path class="st0" d="M2022,1566.3v90c220.9,0,400,179.1,400,400c0,220.9-179.1,400-400,400s-400-179.1-400-400h-90 c0,270.6,219.4,490,490,490s490-219.4,490-490S2292.7,1566.3,2022,1566.3z"></path> <g> <path class="st1" d="M573.7,328H393.4l120,69.3l-87.8,50.7l-67.3-38.8H177.9L335.3,500l-157.4,90.9h180.4l67.3-38.8l87.8,50.7 l-120,69.3h180.4l247.9-143.1l0.5-57.5L573.7,328z M641.3,528.9l-37.8,21.8l-37.8-21.8L515.7,500l49.6-28.6l38.2-22.1l38.2,22.1 l49.6,28.6L641.3,528.9z"></path> <g> <path class="st1" d="M10,477.9l2.8-35.2l15.5,1.2l-1.4,17.2l22.9,1.8l1.2-15.5l14.2,1.1L64,464l37.3,3l-1.4,18L10,477.9z"></path> <path class="st1" d="M107.4,422.7l-3.1,18l-88.8-15.3l3.1-18L107.4,422.7z"></path> <path class="st1" d="M58.6,381c0.9,0.2,1.4,0.3,1.7,0.3c0.2-0.1,0.5-0.3,0.9-0.7L79,360.1c1.7,0,3.9,0.4,6.6,1.2l30,8.4 c1.5,3.7,2.2,7.5,2.2,11.6c0,4-0.5,7.9-1.5,11.6c-1,3.7-2.6,7.2-4.7,10.6c-2.1,3.4-4.7,6.3-7.9,8.7l-22.1-6.2l4.8-17.3l15.3,4.3 c0.8,0.2,1.3-0.1,1.6-1l1.5-5.4c0.2-0.9,0-1.4-0.8-1.6l-18.4-5.1c-1.1-0.3-1.8-0.5-2.2-0.4c-0.4,0-0.8,0.4-1.5,1.2l-17.5,20.1 c-0.8-0.1-1.9-0.2-3.2-0.5c-1.3-0.3-2.4-0.5-3.4-0.8l-30.9-8.6c-1.5-3.7-2.2-7.5-2.3-11.5s0.4-7.8,1.5-11.5 c1-3.7,2.6-7.2,4.7-10.7c2.1-3.4,4.8-6.4,7.9-8.7l22.7,6.3l-4.8,17.3l-15.9-4.4c-0.8-0.2-1.3,0.1-1.6,1l-1.5,5.4 c-0.2,0.9,0,1.4,0.8,1.6L58.6,381z"></path> <path class="st1" d="M40.6,327.4l7.1-16.6L83,325.9l3.5-8.1l-35.3-15.2l7.1-16.6l82.8,35.6l-7.1,16.6l-34.4-14.8l-3.5,8.1 l34.4,14.8l-7.1,16.6L40.6,327.4z"></path> <path class="st1" d="M175.1,255.9c0,3.5-0.8,7.3-2.4,11.4c-1.6,4.1-3.8,8.1-6.5,12.2l-11.1,16.6l-74.9-50.2l11.1-16.6 c2.7-4.1,5.6-7.6,8.7-10.7c3.1-3.1,6.3-5.3,9.6-6.6l28.6,19.2c0.4,1.3,0.8,2.7,1,4.4c0.2,1.6,0.3,3.2,0.3,4.9 c1.5-0.6,3-1.1,4.5-1.6c1.5-0.5,2.9-0.8,4.2-0.9L175.1,255.9z M106.3,231.7c-1-0.6-1.8-0.5-2.4,0.5l-3.6,5.4l22.6,15.1l3.9-5.8 c0.5-0.7,0.3-1.3-0.3-1.7L106.3,231.7z M139.8,254.2c-0.7-0.5-1.3-0.3-1.7,0.3l-3.9,5.8l20.9,14l3.6-5.4c0.6-1,0.5-1.8-0.5-2.4 L139.8,254.2z"></path> <path class="st1" d="M147.2,159.1l63.7,56.2c-0.3,3.9-1.3,7.8-3.1,11.5c-1.8,3.7-3.9,7-6.5,9.8c-2.5,2.9-5.5,5.4-9,7.6 c-3.5,2.2-7.1,3.7-11,4.5l-63.7-56.2l12-13.6l58.4,51.5c0.6,0.5,1.2,0.5,1.8-0.2l3.8-4.3c0.6-0.7,0.6-1.3,0-1.8l-58.4-51.5 L147.2,159.1z"></path> <path class="st1" d="M229.2,205.5l-48.4-55.1l-2,0l-7.5,6.6L161,145.3l31.3-27.5l10.2,11.6l-7.5,6.6l-0.2,2l48.4,55.1L229.2,205.5 z"></path> <path class="st1" d="M236.6,101.2c-0.5-0.7-1.1-0.8-1.8-0.3l-4.7,3.2c-0.8,0.5-0.9,1.1-0.4,1.8l36.7,54.4c0.5,0.7,1.1,0.8,1.8,0.3 l4.7-3.2c0.8-0.5,0.9-1.1,0.4-1.8l-14.1-21l14.8-10l18.1,26.8c-1.3,3.7-3.2,7.2-5.8,10.3c-2.6,3.1-5.5,5.7-8.7,7.9 c-3.2,2.1-6.7,3.8-10.5,5.1c-3.9,1.3-7.8,1.8-11.7,1.6l-44.6-66.1c1.3-3.7,3.2-7.2,5.8-10.3c2.6-3.1,5.5-5.7,8.7-7.9 c3.2-2.1,6.7-3.8,10.5-5.1c3.9-1.3,7.8-1.8,11.7-1.6l17.9,26.5l-14.8,10L236.6,101.2z"></path> <path class="st1" d="M262.5,70.6l16.2-8L295.8,97l7.9-3.9l-17.1-34.4l16.2-8l40,80.8l-16.2,8L310,105.8l-7.9,3.9l16.6,33.6 l-16.2,8L262.5,70.6z"></path> <path class="st1" d="M321.4,43.1l33.3-11.7l5.1,14.6l-16.3,5.7l7.6,21.6l14.6-5.1l4.7,13.5l-14.6,5.1l7.3,20.7l16.3-5.7l5.1,14.6 l-33.3,11.7L321.4,43.1z"></path> <path class="st1" d="M411.3,75.1c-0.2-0.8-0.7-1.1-1.5-0.9l-6.8,1.5l7.5,34.4l-17.7,3.8l-19.1-88.1l20.1-4.4 c4.7-1,9.2-1.6,13.5-1.6c4.3-0.1,8.1,0.6,11.4,1.9l7.7,35.6c-0.6,1.2-1.4,2.5-2.3,3.8c-1,1.3-2,2.6-3.1,3.7c1.5,0.6,2.9,1.3,4.4,2 c1.4,0.7,2.6,1.5,3.7,2.3l7.7,35.3l-18.2,3.9L411.3,75.1z M400.1,62.2l6.8-1.5c0.8-0.2,1.1-0.7,0.9-1.5l-5.6-25.6 c-0.2-1.1-0.9-1.6-2.1-1.3l-6.3,1.4L400.1,62.2z"></path> <path class="st1" d="M467.4,64.6c0.9-0.1,1.3-0.5,1.3-1.3l-4.2-52.2l18-1.5l4.8,59.3c-1.6,1.7-3.5,3.1-5.8,4.3 c-2.3,1.2-4.7,2.1-7.2,2.7l2,24.6l-17.6,1.4l-2-24.6c-2.6-0.2-5.1-0.7-7.5-1.5s-4.6-1.9-6.4-3.3l-4.8-59.3l18-1.5l4.2,52.2 c0.1,0.8,0.6,1.2,1.5,1.1L467.4,64.6z"></path> </g> <path class="st1" d="M500,10v90c220.9,0,400,179.1,400,400S720.9,900,500,900S100,720.9,100,500H10c0,270.6,219.4,490,490,490 s490-219.4,490-490S770.6,10,500,10z"></path> </g> <path class="st0" d="M573.7,1884.2H393.4l120,69.3l-87.8,50.7l-67.3-38.8H177.9l157.4,90.9l-157.4,90.9h180.4l67.3-38.8l87.8,50.7 l-120,69.3h180.4l247.9-143.1l0.5-57.5L573.7,1884.2z M641.3,2085.2l-37.8,21.8l-37.8-21.8l-50.1-28.9l49.6-28.6l38.2-22.1 l38.2,22.1l49.6,28.6L641.3,2085.2z"></path> <g> <path class="st0" d="M10,2034.2l2.8-35.2l15.5,1.2l-1.4,17.2l22.9,1.8l1.2-15.5l14.2,1.1l-1.2,15.5l37.3,3l-1.4,18L10,2034.2z"></path> <path class="st0" d="M107.4,1979l-3.1,18l-88.8-15.3l3.1-18L107.4,1979z"></path> <path class="st0" d="M58.6,1937.3c0.9,0.2,1.4,0.3,1.7,0.3c0.2-0.1,0.5-0.3,0.9-0.7l17.8-20.5c1.7,0,3.9,0.4,6.6,1.2l30,8.4 c1.5,3.7,2.2,7.5,2.2,11.6c0,4-0.5,7.9-1.5,11.6c-1,3.7-2.6,7.2-4.7,10.6c-2.1,3.4-4.7,6.3-7.9,8.7l-22.1-6.2l4.8-17.3l15.3,4.3 c0.8,0.2,1.3-0.1,1.6-1l1.5-5.4c0.2-0.9,0-1.4-0.8-1.6l-18.4-5.1c-1.1-0.3-1.8-0.5-2.2-0.4c-0.4,0-0.8,0.4-1.5,1.2l-17.5,20.1 c-0.8-0.1-1.9-0.2-3.2-0.5c-1.3-0.3-2.4-0.5-3.4-0.8l-30.9-8.6c-1.5-3.7-2.2-7.5-2.3-11.5s0.4-7.8,1.5-11.5c1-3.7,2.6-7.2,4.7-10.7 c2.1-3.4,4.8-6.4,7.9-8.7l22.7,6.3l-4.8,17.3l-15.9-4.4c-0.8-0.2-1.3,0.1-1.6,1l-1.5,5.4c-0.2,0.9,0,1.4,0.8,1.6L58.6,1937.3z"></path> <path class="st0" d="M40.6,1883.7l7.1-16.6l35.3,15.2l3.5-8.1l-35.3-15.2l7.1-16.6l82.8,35.6l-7.1,16.6l-34.4-14.8l-3.5,8.1 l34.4,14.8l-7.1,16.6L40.6,1883.7z"></path> <path class="st0" d="M175.1,1812.2c0,3.5-0.8,7.3-2.4,11.4c-1.6,4.1-3.8,8.1-6.5,12.2l-11.1,16.6l-74.9-50.2l11.1-16.6 c2.7-4.1,5.6-7.6,8.7-10.7c3.1-3.1,6.3-5.3,9.6-6.6l28.6,19.2c0.4,1.3,0.8,2.7,1,4.4c0.2,1.6,0.3,3.2,0.3,4.9 c1.5-0.6,3-1.1,4.5-1.6c1.5-0.5,2.9-0.8,4.2-0.9L175.1,1812.2z M106.3,1788c-1-0.6-1.8-0.5-2.4,0.5l-3.6,5.4l22.6,15.1l3.9-5.8 c0.5-0.7,0.3-1.3-0.3-1.7L106.3,1788z M139.8,1810.5c-0.7-0.5-1.3-0.3-1.7,0.3l-3.9,5.8l20.9,14l3.6-5.4c0.6-1,0.5-1.8-0.5-2.4 L139.8,1810.5z"></path> <path class="st0" d="M147.2,1715.3l63.7,56.2c-0.3,3.9-1.3,7.8-3.1,11.5c-1.8,3.7-3.9,7-6.5,9.8c-2.5,2.9-5.5,5.4-9,7.6 c-3.5,2.2-7.1,3.7-11,4.5l-63.7-56.2l12-13.6l58.4,51.5c0.6,0.5,1.2,0.5,1.8-0.2l3.8-4.3c0.6-0.7,0.6-1.3,0-1.8l-58.4-51.5 L147.2,1715.3z"></path> <path class="st0" d="M229.2,1761.7l-48.4-55.1l-2,0l-7.5,6.6l-10.2-11.6l31.3-27.5l10.2,11.6l-7.5,6.6l-0.2,2l48.4,55.1 L229.2,1761.7z"></path> <path class="st0" d="M236.6,1657.5c-0.5-0.7-1.1-0.8-1.8-0.3l-4.7,3.2c-0.8,0.5-0.9,1.1-0.4,1.8l36.7,54.4c0.5,0.7,1.1,0.8,1.8,0.3 l4.7-3.2c0.8-0.5,0.9-1.1,0.4-1.8l-14.1-21l14.8-10l18.1,26.8c-1.3,3.7-3.2,7.2-5.8,10.3c-2.6,3.1-5.5,5.7-8.7,7.9 c-3.2,2.1-6.7,3.8-10.5,5.1c-3.9,1.3-7.8,1.8-11.7,1.6l-44.6-66.1c1.3-3.7,3.2-7.2,5.8-10.3c2.6-3.1,5.5-5.7,8.7-7.9 c3.2-2.1,6.7-3.8,10.5-5.1c3.9-1.3,7.8-1.8,11.7-1.6l17.9,26.5l-14.8,10L236.6,1657.5z"></path> <path class="st0" d="M262.5,1626.8l16.2-8l17.1,34.4l7.9-3.9l-17.1-34.4l16.2-8l40,80.8l-16.2,8l-16.6-33.6l-7.9,3.9l16.6,33.6 l-16.2,8L262.5,1626.8z"></path> <path class="st0" d="M321.4,1599.4l33.3-11.7l5.1,14.6l-16.3,5.7l7.6,21.6l14.6-5.1l4.7,13.5l-14.6,5.1l7.3,20.7l16.3-5.7l5.1,14.6 l-33.3,11.7L321.4,1599.4z"></path> <path class="st0" d="M411.3,1631.4c-0.2-0.8-0.7-1.1-1.5-0.9l-6.8,1.5l7.5,34.4l-17.7,3.8l-19.1-88.1l20.1-4.4 c4.7-1,9.2-1.6,13.5-1.6c4.3-0.1,8.1,0.6,11.4,1.9l7.7,35.6c-0.6,1.2-1.4,2.5-2.3,3.8c-1,1.3-2,2.6-3.1,3.7c1.5,0.6,2.9,1.3,4.4,2 c1.4,0.7,2.6,1.5,3.7,2.3l7.7,35.3l-18.2,3.9L411.3,1631.4z M400.1,1618.4l6.8-1.5c0.8-0.2,1.1-0.7,0.9-1.5l-5.6-25.6 c-0.2-1.1-0.9-1.6-2.1-1.3l-6.3,1.4L400.1,1618.4z"></path> <path class="st0" d="M467.4,1620.9c0.9-0.1,1.3-0.5,1.3-1.3l-4.2-52.2l18-1.5l4.8,59.3c-1.6,1.7-3.5,3.1-5.8,4.3 c-2.3,1.2-4.7,2.1-7.2,2.7l2,24.6l-17.6,1.4l-2-24.6c-2.6-0.2-5.1-0.7-7.5-1.5s-4.6-1.9-6.4-3.3l-4.8-59.3l18-1.5l4.2,52.2 c0.1,0.8,0.6,1.2,1.5,1.1L467.4,1620.9z"></path> </g> <path class="st0" d="M500,1566.3v90c220.9,0,400,179.1,400,400c0,220.9-179.1,400-400,400s-400-179.1-400-400H10 c0,270.6,219.4,490,490,490s490-219.4,490-490S770.6,1566.3,500,1566.3z"></path> </svg>
+                    </a>
+                </div>
+                <div class="footer__socials">
+                    <a class="footer__socials_link" href="https://www.facebook.com/fishbutchering" target="_blank"> <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="25px" height="25px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>Facebook</desc><path style="fill:#525252;" d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z"></path></svg> </a>
+                    <a class="footer__socials_link" href="https://vk.com/fishbutchery" target="_blank"> <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"><desc>VK</desc><path style="fill:#525252;" d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752s3.499,8.104,7.573,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999"></path></svg> </a>
+                    <a class="footer__socials_link" href="https://www.instagram.com/fish_butchery/" target="_blank"> <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 30 30" xml:space="preserve"><desc>Instagram</desc><path style="fill:#525252;" d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path><path style="fill:#525252;" d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path><path style="fill:#525252;" d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path></svg> </a>
+                </div>
+                <div class="footer__address">
+                    © 2020 Fish Butchery<br />
+                    Юридический адрес организации:
+                    644074, Россия, Омская область, г. Омск,
+                    пр. Комарова, д. 27, кор. 6, кв 83
+                </div>
+            </div>
+            <div class="footer__categories">
+                <a href="#" class="footer__category">Охлаждённая рыба</a>
+                <a href="#" class="footer__category">Икра</a>
+                <a href="#" class="footer__category">Морепродукты</a>
+                <a href="#" class="footer__category">Лаборатория ферментации</a>
+                <a href="#" class="footer__category">Готовая еда</a>
+                <a href="#" class="footer__category">Напитки</a>
+            </div>
+            <div class="footer__categories">
+                <a href="#" class="footer__category">О нас</a>
+                <a href="#" class="footer__category">Контакты</a>
+                <a href="#" class="footer__category">Instagram</a>
+                <a href="#" class="footer__category">ВКонтакте</a>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="arrow-top" data-linkto="carousel">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"> <g> <path style="fill:#71bfe6;" d="M24,3.125c11.511,0,20.875,9.364,20.875,20.875S35.511,44.875,24,44.875S3.125,35.511,3.125,24S12.489,3.125,24,3.125 M24,0.125C10.814,0.125,0.125,10.814,0.125,24S10.814,47.875,24,47.875S47.875,37.186,47.875,24S37.186,0.125,24,0.125L24,0.125z"></path> </g> <path style="fill:#71bfe6;" d="M25.5,36.033c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5V16.87l-7.028,7.061c-0.293,0.294-0.678,0.442-1.063,0.442 c-0.383,0-0.766-0.146-1.058-0.437c-0.587-0.584-0.589-1.534-0.005-2.121l9.591-9.637c0.281-0.283,0.664-0.442,1.063-0.442 c0,0,0.001,0,0.001,0c0.399,0,0.783,0.16,1.063,0.443l9.562,9.637c0.584,0.588,0.58,1.538-0.008,2.122 c-0.589,0.583-1.538,0.58-2.121-0.008l-6.994-7.049L25.5,36.033z"></path> </svg>
+    </a>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e9af8d05-8e6b-4d5b-84b5-62e858937da8"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/InstagramFeed/2.0.2/InstagramFeed.min.js"></script>
+<script defer src="../js/script.js"></script>
+</body>
+</html>

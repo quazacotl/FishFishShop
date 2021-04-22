@@ -1,0 +1,29 @@
+<div class="navbar-fixed">
+    <ul id="catalogue" class="dropdown-content">
+        <li><a href="/fresh-fish">Охлаждённая рыба</a></li>
+        <li><a href="/caviar">Икра</a></li>
+        <li><a href="/seafood">Морепродукты</a></li>
+        <li><a href="/fermentation">Ферментация</a></li>
+        <li><a href="/beverage">Напитки</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><img src="/img/blue-logo.webp" alt="logo"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="dropdown-trigger" href="#" data-target="catalogue">Каталог<i class="material-icons right"></i></a></li>
+
+                {{#if isAbout}}
+                <li><a class="active" href="/about">О нас</a></li>
+                {{else}}
+                <li><a class="black" href="/about">О нас</a></li>
+                {{/if}}
+
+                {{#if isContacts}}
+                    <li><a class="active" href="/contacts">Контакты</a></li>
+                {{else}}
+                    <li><a href="/contacts">Контакты</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </nav>
+</div>

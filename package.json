@@ -1,0 +1,29 @@
+{
+  "name": "fishshop",
+  "version": "1.0.0",
+  "description": "FishButchery",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "fish",
+    "shop"
+  ],
+  "author": "Dmitry Romanov <quazacotl@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.3",
+    "core-js": "^3.9.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "imagemin-webp": "^6.0.0",
+    "mongoose": "^5.11.17",
+    "tiny-slider": "^2.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

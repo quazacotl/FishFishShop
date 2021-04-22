@@ -1,0 +1,144 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 920px
+
+
+
+@media (max-width: 1090px)
+  .category
+    &__item
+      &_img-wrapper
+        height: 170px
+  .map__contacts
+    left: 7rem
+
+@media (max-width: 991px)
+  \:root
+    --section-margin: 60px
+  .container
+    max-width: 720px
+  .header
+    &__menu
+      display: none
+  .hamburger
+    display: block
+    position: relative
+    //right: 10px
+    //top: 30px
+    //transform: translateY(-50%)
+    width: 26px
+    height: 15px
+    transition: 0.5s all
+    z-index: 1
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #000
+      margin-bottom: 5px
+      transition: 0.5s all
+    &_active
+      position: fixed
+      top: 5%
+      right: 5%
+      span
+        margin-bottom: -2px
+        &:first-child
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(3px) rotate(45deg)
+
+  .carousel
+    min-height: 400px
+  .category
+    &__wrapper
+      margin-top: 30px
+      grid-template-columns: repeat(2, minmax(200px, 350px))
+
+  .about
+    &__wrapper
+      width: 640px
+    &__header
+      font-size: 26px
+    &__parag
+      font-size: 17px
+
+  .map
+    &__contacts
+      width: 19rem
+      padding: 1rem
+      &_header
+        font-size: 20px
+      &_addr
+        font-size: 16px
+      &_email
+        font-size: 16px
+
+@media (max-width: 768px)
+  \:root
+    --header-height: 60px
+    --section-margin: 40px
+  .container
+    max-width: 540px
+
+
+  .carousel
+    &__slide
+      &-content
+        left: 0
+      &-title
+        font-size: 25px
+
+  .category
+    &__title
+      font-size: 35px
+      line-height: 60px
+
+  .about
+    &__wrapper
+      width: 540px
+    &__header
+      font-size: 24px
+    &__parag
+      font-size: 15px
+
+  .map
+    &__contacts
+      width: 15rem
+      padding: 1rem
+      left: 4rem
+      &_header
+        font-size: 16px
+      &_addr
+        font-size: 12px
+      &_email
+        font-size: 12px
+
+@media (max-width: 576px)
+  .container
+    max-width: 310px
+
+  .category
+    &__wrapper
+      grid-template-columns: repeat(1, minmax(200px, 350px))
+
+  .about
+    &__wrapper
+      width: 310px
+      height: 1350px
+    &__header
+      font-size: 26px
+    &__parag
+      font-size: 17px
+
+  .map
+    &__contacts
+      display: none
+
+  .footer
+    //&__info
+    //  display: none
+    &__categories
+      display: none
