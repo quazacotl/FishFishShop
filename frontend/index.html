@@ -31,29 +31,39 @@
                         <a href="#" data-linkto="map" class="header__menu_link">Контакты</a>
                     </li>
                 </ul>
+                <div class="header__side-menu">
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="cooled">Охлаждённая рыба</a></div>
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="caviar">Икра</a></div>
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="seafood">Морепродукты</a></div>
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="fermentation">Ферментация</a></div>
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="beverage">Напитки</a></div>
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="about">О нас</a></div>
+                    <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="#" data-linkto="map">Контакты</a></div>
+                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+
             </div>
         </div>
         <div class="dropdown animate__animated">
             <ul class="dropdown__wrapper">
                 <li class="dropdown__item" >
-                    <a class="dropdown__item_link" href="#">Охлаждённая рыба</a>
+                    <a class="dropdown__item_link" href="#" data-linkto="cooled">Охлаждённая рыба</a>
                 </li>
                 <li class="dropdown__item">
-                    <a class="dropdown__item_link" href="#">Икра</a>
+                    <a class="dropdown__item_link" href="#" data-linkto="caviar">Икра</a>
                 </li>
                 <li class="dropdown__item">
-                    <a class="dropdown__item_link" href="#">Морепродукты</a>
+                    <a class="dropdown__item_link" href="#" data-linkto="seafood">Морепродукты</a>
                 </li>
                 <li class="dropdown__item">
-                    <a class="dropdown__item_link" href="#">Ферментация</a>
+                    <a class="dropdown__item_link" href="#" data-linkto="fermentation">Ферментация</a>
                 </li>
                 <li class="dropdown__item">
-                    <a class="dropdown__item_link" href="#">Напитки</a>
+                    <a class="dropdown__item_link" href="#" data-linkto="beverage">Напитки</a>
                 </li>
             </ul>
         </div>
@@ -82,9 +92,9 @@
         </div>
         <div class="carousel__controls"></div>
     </section>
-    <section class="category">
+    <section class="category cooled">
         <div class="container">
-            <h2 class="category__title">Охлаждённая рыба</h2>
+            <h2 class="category__title" id="cooled">Охлаждённая рыба</h2>
             <div class="category__wrapper">
                 <div class="category__item">
                     <a href="/" class="category__item_link">
@@ -232,9 +242,9 @@
             </div>
         </div>
     </section>
-    <section class="category">
+    <section class="category caviar">
         <div class="container">
-            <h2 class="category__title">Икра</h2>
+            <h2 class="category__title" id="caviar">Икра</h2>
             <div class="category__wrapper">
                 <div class="category__item">
                     <a href="/" class="category__item_link">
@@ -291,9 +301,9 @@
             </div>
         </div>
     </section>
-    <section class="category">
+    <section class="category seafood">
         <div class="container">
-            <h2 class="category__title">Морепродукты</h2>
+            <h2 class="category__title" id="seafood">Морепродукты</h2>
             <div class="category__wrapper">
                 <div class="category__item">
                     <a href="/" class="category__item_link">
@@ -376,9 +386,9 @@
             </div>
         </div>
     </section>
-    <section class="category">
+    <section class="category fermentation">
         <div class="container">
-            <h2 class="category__title">Лаборатория Ферментации</h2>
+            <h2 class="category__title" id="fermentation">Лаборатория Ферментации</h2>
             <div class="category__wrapper">
                 <div class="category__item">
                     <a href="/" class="category__item_link">
@@ -523,9 +533,9 @@
             </div>
         </div>
     </section>
-    <section class="category">
+    <section class="category beverage">
         <div class="container">
-            <h2 class="category__title">Напитки</h2>
+            <h2 class="category__title" id="beverage">Напитки</h2>
             <div class="category__wrapper">
                 <div class="category__item">
                     <a href="/" class="category__item_link">
@@ -659,8 +669,27 @@
     <a href="#" class="arrow-top" data-linkto="carousel">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve"> <g> <path style="fill:#71bfe6;" d="M24,3.125c11.511,0,20.875,9.364,20.875,20.875S35.511,44.875,24,44.875S3.125,35.511,3.125,24S12.489,3.125,24,3.125 M24,0.125C10.814,0.125,0.125,10.814,0.125,24S10.814,47.875,24,47.875S47.875,37.186,47.875,24S37.186,0.125,24,0.125L24,0.125z"></path> </g> <path style="fill:#71bfe6;" d="M25.5,36.033c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5V16.87l-7.028,7.061c-0.293,0.294-0.678,0.442-1.063,0.442 c-0.383,0-0.766-0.146-1.058-0.437c-0.587-0.584-0.589-1.534-0.005-2.121l9.591-9.637c0.281-0.283,0.664-0.442,1.063-0.442 c0,0,0.001,0,0.001,0c0.399,0,0.783,0.16,1.063,0.443l9.562,9.637c0.584,0.588,0.58,1.538-0.008,2.122 c-0.589,0.583-1.538,0.58-2.121-0.008l-6.994-7.049L25.5,36.033z"></path> </svg>
     </a>
+
+    <form class="admin-login" method="post">
+
+        <input class="admin-input" type="text" placeholder="логин" id="username">
+        <input class="admin-input" type="password" placeholder="пароль" id="password">
+        <input type="submit" value="Войти">
+    </form>
+    <div class="shadow"></div>
+
+    <header class="crm-menu">
+        <div class="crm-menu-item"><a href="admin/crm/overview" class="crm-menu-item-link">Обзор</a></div>
+        <div class="crm-menu-item"><a href="admin/crm/category" class="crm-menu-item-link">Категории</a></div>
+        <div class="crm-menu-item"><a href="admin/crm/products" class="crm-menu-item-link">Продукты</a></div>
+        <div class="crm-menu-item"><a href="admin/crm/orders" class="crm-menu-item-link">Заказы</a></div>
+    </header>
+
+
+
+
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e9af8d05-8e6b-4d5b-84b5-62e858937da8"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/InstagramFeed/2.0.2/InstagramFeed.min.js"></script>
-<script defer src="../js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/InstagramFeed/3.0.2/InstagramFeed.min.js" integrity="sha512-1gvRgXXP5WCC2ABHyac9wN6NgrtubCS0VMmWg0ckVH7POYLaVm344OHOEUfEIfE6V48geOw2C1BYnvKxc6qAEg==" crossorigin="anonymous"></script>
+<script src="../js/index.js"></script>
 </body>
 </html>

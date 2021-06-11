@@ -20,6 +20,40 @@
   .header
     &__menu
       display: none
+
+    &__side-menu
+      display: flex
+      position: fixed
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      top: 0
+      right: -100%
+      width: 50%
+      height: 100vh
+      padding: 20px 15px
+      background-color: rgba(0,0,0, .8)
+      transition: 0.6s right
+      z-index: 1
+      &-item
+        height: 50px
+        border-right: none
+        color: #fff
+        width: 100%
+        text-align: center
+        &-link
+          display: block
+          line-height: 50px
+          &:active
+            background-color: transparent
+            -webkit-tap-highlight-color: transparent
+
+
+      &_active
+        right: 0
+
+
+
   .hamburger
     display: block
     position: relative
@@ -34,14 +68,16 @@
       display: block
       height: 2px
       width: 100%
-      background-color: #000
+      background-color: var(--main-text-color)
       margin-bottom: 5px
       transition: 0.5s all
     &_active
       position: fixed
-      top: 5%
-      right: 5%
+      top: 30px
+      right: 3%
+
       span
+        background-color: #fff
         margin-bottom: -2px
         &:first-child
           transform: translateY(3px) rotate(-45deg)

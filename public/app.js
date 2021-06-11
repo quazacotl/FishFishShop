@@ -42,4 +42,4 @@ function instagramFeed(userName, feedLength) {
     };
 }
 
-instagramFeed('fish_butchery', 6);
+// instagramFeed('fish_butchery', 6);

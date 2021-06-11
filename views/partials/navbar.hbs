@@ -1,29 +1,59 @@
-<div class="navbar-fixed">
-    <ul id="catalogue" class="dropdown-content">
-        <li><a href="/fresh-fish">Охлаждённая рыба</a></li>
-        <li><a href="/caviar">Икра</a></li>
-        <li><a href="/seafood">Морепродукты</a></li>
-        <li><a href="/fermentation">Ферментация</a></li>
-        <li><a href="/beverage">Напитки</a></li>
-    </ul>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><img src="/img/blue-logo.webp" alt="logo"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a class="dropdown-trigger" href="#" data-target="catalogue">Каталог<i class="material-icons right"></i></a></li>
-
-                {{#if isAbout}}
-                <li><a class="active" href="/about">О нас</a></li>
-                {{else}}
-                <li><a class="black" href="/about">О нас</a></li>
-                {{/if}}
-
-                {{#if isContacts}}
-                    <li><a class="active" href="/contacts">Контакты</a></li>
-                {{else}}
-                    <li><a href="/contacts">Контакты</a></li>
-                {{/if}}
+<header class="header animate__animated">
+    <div class="container">
+        <div class="header__wrapper">
+            <a class="header__link" href="/">
+                <img src="./img/blue-logo.webp" alt="logo" class="header__img">
+            </a>
+            <div class="header__info-section">
+                <div class="header__info-section_schedule">Пн-Вс с 9:00 до 21:00</div>
+                <a href="tel: +79152738899"  class="header__info-section_phone">+7 (915) 273 88 99</a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu_li">
+                    <a href="#" class="header__menu_link header__menu_link-catalogue">Каталог</a>
+                </li>
+                <li class="header__menu_li">
+                    <a href="/about"  class="header__menu_link">О нас</a>
+                </li>
+                <li class="header__menu_li">
+                    <a href="/contacts" data-linkto="map" class="header__menu_link">Контакты</a>
+                </li>
             </ul>
+            <div class="header__side-menu">
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/cooled" >Охлаждённая рыба</a></div>
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/caviar" >Икра</a></div>
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/seafood" >Морепродукты</a></div>
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/fermentation" >Ферментация</a></div>
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/beverage" >Напитки</a></div>
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/about" >О нас</a></div>
+                <div class="header__side-menu-item"><a class="header__side-menu-item-link" href="/map" >Контакты</a></div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </div>
-    </nav>
-</div>
+    </div>
+    <div class="dropdown animate__animated">
+        <ul class="dropdown__wrapper">
+            <li class="dropdown__item" >
+                <a class="dropdown__item_link" href="/cooled">Охлаждённая рыба</a>
+            </li>
+            <li class="dropdown__item">
+                <a class="dropdown__item_link" href="/caviar" >Икра</a>
+            </li>
+            <li class="dropdown__item">
+                <a class="dropdown__item_link" href="/seafood">Морепродукты</a>
+            </li>
+            <li class="dropdown__item">
+                <a class="dropdown__item_link" href="/fermentation" >Ферментация</a>
+            </li>
+            <li class="dropdown__item">
+                <a class="dropdown__item_link" href="/beverage" >Напитки</a>
+            </li>
+        </ul>
+    </div>
+
+</header>

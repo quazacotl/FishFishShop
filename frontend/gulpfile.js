@@ -9,6 +9,7 @@ const webpack = require("webpack-stream");
 const imageminWebp = require('imagemin-webp');
 const extReplace = require("gulp-ext-replace");
 
+
 const dist = "./dist/";
 // const dist = "C:\\serv\\ospanel\\domains\\fish";
 
@@ -16,6 +17,9 @@ gulp.task('server', function() {
     browserSync.init({
         server: {
             baseDir: dist
+        },
+        ui: {
+            port: 4000
         }
     });
 });
@@ -24,6 +28,8 @@ gulp.task('html', function () {
     return gulp.src('*.html')
         .pipe(gulp.dest(dist));
 });
+
+
 
 gulp.task('sass', function() {
     return gulp.src("sass/**/*.+(scss|sass)")
@@ -37,6 +43,7 @@ gulp.task('sass', function() {
         }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest(dist + "/css"))
+        .pipe(gulp.dest("../public/css"))
         .pipe(browserSync.stream());
 });
 
@@ -86,37 +93,44 @@ gulp.task("images:webp", function() {
         .pipe(gulp.dest( dist + "/img"));
 });
 
+
 gulp.task('build-js', () => {
-    return gulp.src("./js/index.js")
-        .pipe(webpack({
-            mode: 'development',
-            output: {
-                filename: 'script.js'
-            },
-            watch: false,
-            devtool: "source-map",
-            module: {
-                rules: [
-                    {
-                        test: /\.m?js$/,
-                        exclude: /(node_modules|bower_components)/,
-                        use: {
-                            loader: 'babel-loader',
-                            options: {
-                                presets: [['@babel/preset-env', {
-                                    debug: true,
-                                    corejs: 3,
-                                    useBuiltIns: "usage"
-                                }]]
+    ['adminScripts.js', 'index.js'].forEach(filename => {
+        return gulp.src(`./js/${filename}`)
+            .pipe(webpack({
+                mode: 'development',
+                output: {
+                    filename: filename
+                },
+                watch: false,
+                devtool: "source-map",
+                module: {
+                    rules: [
+                        {
+                            test: /\.m?js$/,
+                            exclude: /(node_modules|bower_components)/,
+                            use: {
+                                loader: 'babel-loader',
+                                options: {
+                                    presets: [['@babel/preset-env', {
+                                        debug: true,
+                                        corejs: 3,
+                                        useBuiltIns: "usage"
+                                    }]]
+                                }
                             }
                         }
-                    }
-                ]
-            }
-        }))
-        .pipe(gulp.dest(dist + '/js'))
-        .on("end", browserSync.reload);
+                    ]
+                }
+            }))
+            .pipe(gulp.dest(dist + '/js'))
+            .pipe(gulp.dest("../public/js"))
+            .on("end", browserSync.reload);
+    });
 });
+
+
+
 
 gulp.task("build-prod-js", () => {
     return gulp.src("./js/index.js")

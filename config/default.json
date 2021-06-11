@@ -1,4 +1,7 @@
 {
   "dbUrl": "mongodb+srv://vagrant:ff1815645@cluster0.x0v4p.mongodb.net/fishdatabase",
-  "port": 5000
+  "port": 5000,
+  "adminLogin": "vag",
+  "adminPassword": "12345",
+  "jwt": "kjsdb63hbg8"
 }
