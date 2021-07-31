@@ -16,7 +16,8 @@ const dist = "./dist/";
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: dist
+            baseDir: dist,
+            index: "crm.html"
         },
         ui: {
             port: 4000
@@ -30,22 +31,24 @@ gulp.task('html', function () {
 });
 
 
+['front-site', 'crm'].forEach(name => {
+    gulp.task('sass', function() {
+        return gulp.src(`sass/${name}/**/*.+(scss|sass)`)
+            .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+            .pipe(rename({
+                prefix: "",
+                suffix: ".min",
+            }))
+            .pipe(autoprefixer({
+                cascade: false
+            }))
+            .pipe(cleanCSS({compatibility: 'ie8'}))
+            .pipe(gulp.dest(dist + `/css/${name}`))
+            .pipe(gulp.dest(`../public/css/${name}`))
+            .pipe(browserSync.stream());
+    });
+})
 
-gulp.task('sass', function() {
-    return gulp.src("sass/**/*.+(scss|sass)")
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(rename({
-            prefix: "",
-            suffix: ".min",
-        }))
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest(dist + "/css"))
-        .pipe(gulp.dest("../public/css"))
-        .pipe(browserSync.stream());
-});
 
 gulp.task('watch', function () {
     gulp.watch("sass/**/*.+(scss|sass|css)", gulp.parallel('sass'));
@@ -95,7 +98,7 @@ gulp.task("images:webp", function() {
 
 
 gulp.task('build-js', () => {
-    ['adminScripts.js', 'index.js'].forEach(filename => {
+    ['adminScripts.js', 'index.js', 'crmScripts.js'].forEach(filename => {
         return gulp.src(`./js/${filename}`)
             .pipe(webpack({
                 mode: 'development',

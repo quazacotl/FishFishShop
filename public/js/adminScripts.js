@@ -93,25 +93,28 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); // Авторизация админа
 
-var form = document.querySelector('.admin-login'),
-    inputs = document.querySelectorAll('.admin-input');
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  var fd = new FormData(form);
-  axios({
-    method: 'post',
-    url: 'http://localhost:5000/admin',
-    data: fd
-  }).then(function (data) {
-    return sessionStorage.setItem('token', data.data.token);
-  }).then(function () {
-    return location.reload();
-  }).catch(function (e) {
-    return console.log(e);
+
+try {
+  var form = document.querySelector('.admin-login');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    axios({
+      method: 'post',
+      url: '/admin',
+      data: new FormData(form)
+    }).then(function (data) {
+      return sessionStorage.setItem('token', data.data.token);
+    }).then(function () {
+      return location.reload();
+    }).catch(function (e) {
+      return console.log(e);
+    });
   });
-});
+} catch (e) {
+  console.log(e);
+}
 
 /***/ }),
 

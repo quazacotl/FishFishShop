@@ -13,7 +13,7 @@ module.exports.login = async function (req, res) {
         token = jwt.sign({
             login: candidate.login,
             userId: candidate._id
-        }, config.get('jwt'), {expiresIn: 60 * 60})
+        }, config.get('jwt'), {expiresIn: "1 hour"})
         res.status(200).json({token})
 
     } else {
@@ -28,7 +28,7 @@ module.exports.showAdminPage = function (req, res) {
     if (token && jwt.verify(token, config.get('jwt'))) {
         res.render('crm-page', {
             title: 'Admin panel',
-            layout: 'admin'
+            layout: 'crm'
         })
     } else {
         res.render('admin-page-login', {

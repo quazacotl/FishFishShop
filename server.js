@@ -10,8 +10,8 @@ const path = require('path')
 const cors = require('cors')
 const morgan = require('morgan')
 const passport = require('passport')
-const bcrypt = require('bcrypt')
-const AdminUser = require('./models/adminUser')
+// const bcrypt = require('bcrypt')
+// const AdminUser = require('./models/adminUser')
 
 const PORT = config.get('port') || 3000
 
@@ -48,13 +48,13 @@ async function start () {
             useUnifiedTopology: true
         })
 
-        app.listen(PORT, () => {
-            console.log('Server has been started...')
-        });
 
     } catch (e) {
         console.log(e)
     }
+    app.listen(PORT, () => {
+        console.log('Server has been started...')
+    });
 }
 
 start()

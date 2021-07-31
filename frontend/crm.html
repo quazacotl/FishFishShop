@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="../css/crm/index.min.css">
+</head>
+<body>
 <div class="admin_container">
     <div class="menu">
         <div class="menu__item active">
@@ -13,6 +21,12 @@
     <div class="catalog">
         <h2 class="catalog__title">Категории товаров</h2>
         <div class="catalog__items">
+            <a href="#" class="catalog__link">
+                <div class="catalog__item">
+                    <span class="catalog__item_title">Сырая рыба</span>
+                    <div class="catalog__item_delete">&times</div>
+                </div>
+            </a>
             <div class="catalog__item_add">
                 <!--                <img class="catalog__item_add_img" src="./img/plus_PNG94.png" alt="plus_img">-->
             </div>
@@ -21,7 +35,7 @@
     </div>
 </div>
 <div class="overlay"></div>
-<form action="crm/create-category" class="add-category-form" method="post" enctype="multipart/form-data">
+<form action="crm/create-category" class="add-category-form">
     <label for="category_name">Название категории</label>
     <input type="text" id="category_name" name="categoryName">
     <label class="add-category-form__input-file-label" for="category_img">Фоновое изображение</label>
@@ -32,9 +46,11 @@
 <div class="modal-confirm">
     <div class="modal-confirm__header">Вы уверены, что хотите удалить?</div>
     <div class="modal-confirm__button-wrapper">
-        <button class="modal-confirm__button modal-confirm__button_yes">Да</button>
+        <button class="modal-confirm__button">Да</button>
         <button class="modal-confirm__button" id="no-button">Нет</button>
         <div class="add-category-form__close">&times</div>
     </div>
 </div>
-<div class="message"></div>
+<script src="js/crmScripts.js"></script>
+</body>
+</html>
