@@ -1,49 +1,53 @@
 const AdminUser = require('../models/adminUser')
-const jwt = require('jsonwebtoken')
+const passport = require('passport')
 const config = require("config")
 const bcrypt = require('bcrypt')
-let token = null;
 
-
-
-
-module.exports.login = async function (req, res) {
-    const candidate = await AdminUser.findOne({login: req.body.username})
-    if (candidate && bcrypt.compareSync(req.body.password, candidate.password)) {
-        token = jwt.sign({
-            login: candidate.login,
-            userId: candidate._id
-        }, config.get('jwt'), {expiresIn: "1 hour"})
-        res.status(200).json({token})
-
-    } else {
-        res.status(404).json({
-            message: 'Неверный логин или пароль'
-        })
-    }
-}
+// module.exports.login = async function (req, res) {
+//     const candidate = await AdminUser.findOne({login: req.body.username})
+//     if (candidate && bcrypt.compareSync(req.body.password, candidate.password)) {
+//         const token = jwt.sign({
+//             login: candidate.login,
+//             userId: candidate._id
+//         }, config.get('jwt'), {expiresIn: "1 hour"})
+//         res.status(200).json({token})
+//         // res.redirect('/crm')
+//
+//     } else {
+//         res.status(404).json({
+//             message: 'Неверный логин или пароль'
+//         })
+//     }
+// }
 
 
 module.exports.showAdminPage = function (req, res) {
-    if (token && jwt.verify(token, config.get('jwt'))) {
-        res.render('crm-page', {
-            title: 'Admin panel',
-            layout: 'crm'
-        })
-    } else {
-        res.render('admin-page-login', {
-            title: 'Admin',
-            layout: 'admin'
-        });
-    }
-
+    res.render('admin-page-login', {
+        title: 'Admin',
+        layout: 'admin'
+    });
 }
 
 module.exports.showCrmPage = function (req, res) {
-
-    res.render('crm-page', {
+    res.render('review-page', {
         title: 'Admin panel',
-        layout: 'admin'
+        layout: 'crm',
+        active: true
     })
-    // res.status(200).json({message: 'ok'})
+}
+
+module.exports.showCatalogPage = function (req, res) {
+    res.render('admin-catalog-page', {
+        title: 'Admin panel',
+        layout: 'crm',
+        active: true
+    })
+}
+
+module.exports.showOrdersPage = function (req, res) {
+    res.render('admin-orders-page', {
+        title: 'Admin panel',
+        layout: 'crm',
+        active: true
+    })
 }

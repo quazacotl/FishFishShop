@@ -3,5 +3,6 @@
   "port": 5000,
   "adminLogin": "vag",
   "adminPassword": "12345",
-  "jwt": "kjsdb63hbg8"
+  "jwt": "kjsdb63hbg8",
+  "sessionSecret": "lkl&je8GYG7rdg"
 }

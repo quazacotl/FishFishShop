@@ -1,0 +1,18 @@
+<div class="overlay"></div>
+<form action="crm/create-category" class="add-category-form" method="post" enctype="multipart/form-data">
+    <label for="category_name">Название категории</label>
+    <input type="text" id="category_name" name="categoryName">
+    <label class="add-category-form__input-file-label" for="category_img">Фоновое изображение</label>
+    <input type="file" id="category_img" name="categoryImg">
+    <div class="add-category-form__close">&times</div>
+    <button class="add-category-form__submit">Создать</button>
+</form>
+<div class="modal-confirm">
+    <div class="modal-confirm__header">Вы уверены, что хотите удалить?</div>
+    <div class="modal-confirm__button-wrapper">
+        <button class="modal-confirm__button modal-confirm__button_yes">Да</button>
+        <button class="modal-confirm__button" id="no-button">Нет</button>
+        <div class="add-category-form__close">&times</div>
+    </div>
+</div>
+<div class="message"></div>

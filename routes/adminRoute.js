@@ -1,17 +1,29 @@
 const {Router} = require('express')
+const passport = require('passport')
 const controller = require('../controllers/admin')
 const router = Router()
 const multer  = require('multer')
-const passport = require('passport')
+const checkAuthenticated = require('../middleware/checkAuthenticated')
+const checkNotAuthenticated = require('../middleware/checkNotAuthenticated')
+
 const upload = multer()
 
-router.get('/admin', controller.showAdminPage)
+router.get('/admin', checkNotAuthenticated, controller.showAdminPage)
 
-router.post('/admin', upload.none(), controller.login)
+router.post('/admin', upload.none(), passport.authenticate('local', {
+    successRedirect: '/crm',
+    failureRedirect: '/admin' }
+))
 
-router.get('/admin/crm',
-    passport.authenticate('jwt', {session: false}),
-    controller.showCrmPage)
+router.get('/crm', checkAuthenticated, controller.showCrmPage)
+
+router.get('/admin/catalog',
+    // passport.authenticate('jwt', {session: false}),
+    controller.showCatalogPage)
+
+router.get('/admin/orders',
+    // passport.authenticate('jwt', {session: false}),
+    controller.showOrdersPage)
 
 // router.get('/admin/crm/overview', controller.showOverviewPage)
 //

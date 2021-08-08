@@ -98,7 +98,7 @@ gulp.task("images:webp", function() {
 
 
 gulp.task('build-js', () => {
-    ['adminScripts.js', 'index.js', 'crmScripts.js'].forEach(filename => {
+    ['index.js', 'crmScripts.js'].forEach(filename => {
         return gulp.src(`./js/${filename}`)
             .pipe(webpack({
                 mode: 'development',

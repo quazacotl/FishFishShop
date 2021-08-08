@@ -1,4 +1,5 @@
 const axios = require('axios');
+import adminAuthorization from './adminScripts'
 
 const addItem = document.querySelector('.catalog__item_add');
 const overlay = document.querySelector('.overlay');
@@ -9,14 +10,39 @@ const noButton = document.querySelector('#no-button');
 const categoryFileImage = document.querySelector('#category_img');
 const messageBlock = document.querySelector('.message');
 const modalConfirmYesBtn = document.querySelector('.modal-confirm__button_yes');
+const reviewBtn = document.querySelector('.review_btn');
+const catalogBtn = document.querySelector('.catalog_btn');
+const ordersBtn = document.querySelector('.orders_btn');
 let deleteCategoryBtns = document.querySelectorAll('.catalog__item_delete');
 let catalogItems = document.querySelectorAll('.catalog__item');
+
+adminAuthorization()
+
 
 let deleteParams = {
     type: String,
     id: String,
     message: String
 }
+
+// Кнопки меню
+
+
+reviewBtn.addEventListener('click', async () => {
+    console.log('click');
+    await axios.get('/admin')
+})
+
+catalogBtn.addEventListener('click', async (e) => {
+    console.log('click');
+    await axios.get('/admin/catalog')
+
+})
+
+ordersBtn.addEventListener('click', async () => {
+    console.log('click');
+    await axios.get('/admin/orders')
+})
 
 // Функции
 
